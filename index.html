@@ -10,17 +10,21 @@
 <body>
 
     <div class="wrapper">
-        
+        <div class="player">
+            <h2 class="player-title">Musica para Programar</h2>
+            <div class="player-actions">
+                <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+                <button class="button" id="play" aria-label="Play" title="Play"></button>
+                <button  hidden class="button" id="pause" aria-label="Pausar" title="Pausar"></button>
+                <button class="button" id="forward" aria-label="Avanzar 10 segundos " title="Avanzar 10 Segundos"></button>
+            </div>
+            <video id="video" poster="./images/poster.jpg"  src="./videos/lofi.mp4" width="400"></video>
+           <div class="player-progress">
+                <input type="range">
+           </div>
+            
+        </div>   
     </div>
-
-    <div class="player">
-        <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
-        <button class="button" id="play" aria-label="Play" title="Play"></button>
-        <button  hidden class="button" id="pause" aria-label="Pausar" title="Pausar"></button>
-        <button class="button" id="forward" aria-label="Avanzar 10 segundos " title="Avanzar 10 Segundos"></button>
-        <video id="video" poster="./images/poster.jpg"  controls  src="./videos/lofi.mp4" width="400"></video>
-    </div>    
-
     <script src="./js/app.js"></script>
     
 </body>
