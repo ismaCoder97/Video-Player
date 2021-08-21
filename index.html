@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Video Player</title>
@@ -11,9 +11,14 @@
 
     <div class="wrapper">
         <div class="player">
-            <video id="video" poster="./images/poster.jpg"  src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="400"></video>
+           <!-- <video style="display: inline-block; height: 245.198px;" ref="video" class="videoplayer" id="video" controlslist="nodownload" poster="https://cdn.videvo.net/videvo_files/video/premium/video0405/thumbnails/632_632-0049_small.jpg">
+                <source type="video/mp4" src="https://cdn.videvo.net/videvo_files/video/premium/video0405/large_watermarked/632_632-0049_preview.mp4">
+                </video>-->
+            <video id="video" poster="./images/poster.png" 
+            src="https://cdn.videvo.net/videvo_files/video/premium/video0405/large_watermarked/632_632-0049_preview.mp4" width="400" controllist="nodownload">
+            </video>
             <div class="player-overlay">
-                <h2 class="player-title">Musica para Programar</h2>
+                <h2 class="player-title">Video Player</h2>
                 <div class="player-actions">
                 <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
                 <button class="button" id="play" aria-label="Play" title="Play"></button>

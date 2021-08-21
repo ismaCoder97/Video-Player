@@ -32,15 +32,17 @@ function handleForward(){
 }
 
 const progress=document.querySelector("#progress");
+//const progress=document.getElementById("#progress");
 video.addEventListener("loadedmetadata",handleLoaded);
 video.addEventListener("timeupdate",handleTimeUpdate);
 
 function handleLoaded(){
     progress.max=video.duration;
-
 }
 
 function handleTimeUpdate(){
+    //console.log(video.currentTime);
+    //console.log(video.duration);
     progress.value=video.currentTime;   
 }
 
